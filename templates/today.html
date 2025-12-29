@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Today's Plan{% endblock %}
+
+{% block content %}
+
+<h4>Today's Agenda</h4>
+
+{% if lectures %}
+
+<div class="row">
+{% for l in lectures %}
+  <div class="col s12 m6">
+    <div class="glass">
+      
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+        <div style="background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); padding: 4px 12px; border-radius: 8px; font-size: 0.75rem; font-weight: bold;">
+            {{ l.subject }}
+        </div>
+        <div class="subtext">{{ l.chapter }}</div>
+      </div>
+
+      <div style="font-size:1.25rem; font-weight:500; margin-bottom: 20px;">
+        {{ l.topic }}
+      </div>
+
+      <form method="POST" style="margin:0; text-align: right;">
+        <input type="hidden" name="subject" value="{{ l.subject_key }}">
+        <input type="hidden" name="chapter" value="{{ l.chapter }}">
+        <input type="hidden" name="topic" value="{{ l.topic }}">
+        <button class="btn">
+            <i class="material-icons-round left">check</i>
+            Mark Complete
+        </button>
+      </form>
+
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+{% else %}
+
+<div class="glass center-align" style="padding: 60px;">
+    <span class="material-icons-round" style="font-size: 64px; color: var(--md-sys-color-secondary);">event_available</span>
+    <div style="font-size: 1.5rem; margin-top: 20px;">No lectures due today</div>
+    <div class="subtext">Take a break or review old material.</div>
+</div>
+
+{% endif %}
+
+<div class="center-align" style="margin-top:30px;">
+  <a href="/" class="btn-flat">← Back to Dashboard</a>
+</div>
+
+{% endblock %}

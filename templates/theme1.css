@@ -1,0 +1,231 @@
+/* =====================================================
+   THEME 1 — CURRENT GLASS DASHBOARD UI
+   (Exact consolidation of existing UI/UX)
+===================================================== */
+
+/* ---------- Global ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+}
+
+/* ---------- Typography ---------- */
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.subtext {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* ---------- Glass Cards ---------- */
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* ---------- Metrics ---------- */
+
+.metric {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.metric.red {
+  color: #ff4d4d;
+}
+
+.metric.green {
+  color: #22c55e;
+}
+
+.metric.yellow {
+  color: #facc15;
+}
+
+/* ---------- Status / Badges ---------- */
+
+.badge {
+  background: rgba(255,255,255,0.12);
+  color: #e5e7eb;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn,
+.btn-small {
+  background-color: #2563eb;
+  border-radius: 12px;
+  text-transform: none;
+}
+
+.btn.red {
+  background-color: #dc2626;
+}
+
+.btn.green {
+  background-color: #16a34a;
+}
+
+.btn-flat {
+  color: #93c5fd;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: rgba(255,255,255,0.06);
+}
+
+table th,
+table td {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+table tr:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+/* ---------- Inputs / Checkboxes ---------- */
+
+input[type="checkbox"] {
+  accent-color: #22c55e;
+}
+
+input[type="date"] {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Threat / Alert States ---------- */
+
+.threat-warning {
+  animation: pulse-yellow 1.5s infinite;
+}
+
+.threat-critical {
+  animation: pulse-red 1s infinite;
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 77, 77, 0);
+  }
+}
+
+@keyframes pulse-yellow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(250, 204, 21, 0);
+  }
+}
+
+/* ---------- Dropdown / Collapsible ---------- */
+
+.collapsible {
+  border: none;
+}
+
+.collapsible-header {
+  background: rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.collapsible-body {
+  background: rgba(255,255,255,0.04);
+}
+
+/* ---------- Navigation / Back Buttons ---------- */
+
+.back-btn {
+  display: inline-block;
+  margin: 12px 0;
+}
+
+/* ---------- Today Plan / Phase Pages ---------- */
+
+.phase-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.overdue-count {
+  font-size: 0.8rem;
+  color: #f87171;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 992px) {
+  .metric {
+    font-size: 1.5rem;
+  }
+
+  .glass {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}

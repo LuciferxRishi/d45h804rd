@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Phase 1 Control{% endblock %}
+
+{% block content %}
+
+<h4>Phase 1: Prelims</h4>
+
+<div class="row">
+
+{% macro subject_card(title, pct, link) %}
+    {% if pct <= 25 %}
+        {% set color = 'var(--md-sys-color-error)' %}
+        {% set status = 'Critical' %}
+    {% elif pct <= 75 %}
+        {% set color = '#FFD700' %}
+        {% set status = 'In Progress' %}
+    {% else %}
+        {% set color = 'var(--md-sys-color-primary)' %}
+        {% set status = 'Excellent' %}
+    {% endif %}
+
+    <div class="col s12 m3">
+        <a href="{{ link }}" style="text-decoration:none; color:inherit;">
+            <div class="glass center-align hoverable">
+                <div style="height: 120px; position: relative; display: flex; flex-direction: column; justify-content: center;">
+                    <svg viewBox="0 0 36 36" style="width: 80px; height: 80px; margin: 0 auto; transform: rotate(-90deg);">
+                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="var(--md-sys-color-surface-container-high)" stroke-width="3" />
+                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="{{ color }}" stroke-width="3" stroke-dasharray="{{ pct }}, 100" />
+                    </svg>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">
+                        {{ pct }}%
+                    </div>
+                </div>
+                
+                <h6 style="margin-top: 15px; font-weight: bold;">{{ title }}</h6>
+                <div class="subtext" style="color: {{ color }}">{{ status }}</div>
+            </div>
+        </a>
+    </div>
+{% endmacro %}
+
+{{ subject_card("Quant Aptitude", qa_pct, "/phase-1/quant") }}
+{{ subject_card("Reasoning", reasoning_pct, "/phase-1/reasoning") }}
+{{ subject_card("English", english_pct, "/phase-1/english") }}
+{{ subject_card("Gen. Awareness", ga_pct, "/phase-1/ga") }}
+
+</div>
+
+<div class="center-align">
+    <a href="/" class="btn-flat">← Back to Dashboard</a>
+</div>
+
+{% endblock %}

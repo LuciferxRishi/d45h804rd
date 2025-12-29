@@ -1,0 +1,149 @@
+﻿phase,subject,chapter_name,no_of_lectures,topic_name,target_date
+Phase 1,Reasoning,Introduction,1,Introduction of course,22-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Introduction & Basics,22-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Same Direction - Easy,23-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Same Direction - Moderate,23-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Same Direction - With Variables,24-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Opposite direction - Basics,24-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Opposite direction - Easy,25-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Opposite direction - Moderate,25-12-2025
+Phase 1,Reasoning,Circular arrangements,8,Facing Opposite direction - With Variables,26-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Introduction & Basics,26-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Same Direction - Easy,27-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Same Direction - Moderate,27-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Same Direction - With Variables,28-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Opposite direction - Basics,28-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Opposite direction - Easy,29-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Opposite direction - Moderate,29-12-2025
+Phase 1,Reasoning,Square/Rectangular Arrangements,8,Facing Opposite direction - With Variables,30-12-2025
+Phase 1,Reasoning,Floor Puzzle,4,Introduction & Basics,30-12-2025
+Phase 1,Reasoning,Floor Puzzle,4,Floor Puzzle - Easy,31-12-2025
+Phase 1,Reasoning,Floor Puzzle,4,Floor Puzzle - Moderate,31-12-2025
+Phase 1,Reasoning,Floor Puzzle,4,Floor Puzzle - With Variables,01-01-2026
+Phase 1,Reasoning,Box Puzzle,4,Introduction & Basics,01-01-2026
+Phase 1,Reasoning,Box Puzzle,4,Box Puzzle - Easy,02-01-2026
+Phase 1,Reasoning,Box Puzzle,4,Box Puzzle - Moderate,02-01-2026
+Phase 1,Reasoning,Box Puzzle,4,Box Puzzle - With Variables,03-01-2026
+Phase 1,Reasoning,Sequencing Puzzles,3,Introduction & Basics,03-01-2026
+Phase 1,Reasoning,Sequencing Puzzles,3,Sequencing Puzzle - Moderate,04-01-2026
+Phase 1,Reasoning,Sequencing Puzzles,3,Sequencing Puzzle - With Variables,04-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Weekdays based,3,Introduction & Basics,05-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Weekdays based,3,Weekdays based puzzle - Moderate,05-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Weekdays based,3,Weekdays based puzzle - With Variables,06-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Month Based,5,Month Based Puzzles - Introduction,06-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Month Based,5,Month Based Puzzles - Easy,07-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Month Based,5,Month Based Puzzles - Moderate,07-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Month Based,5,Month Based Puzzles - Tricky,08-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Month Based,5,Month Based Puzzles - With Variables,08-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Year Based Puzzles,4,Year Based Puzzles - Basics,09-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Year Based Puzzles,4,Year Based Puzzles - Moderate,09-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Year Based Puzzles,4,Year Based Puzzles - Calculation Based,10-01-2026
+Phase 1,Reasoning,Scheduling Puzzles Year Based Puzzles,4,Year Based Puzzles - With Variables,10-01-2026
+Phase 1,Reasoning,Tabular Puzzles,3,Tabular Puzzles - Basic,11-01-2026
+Phase 1,Reasoning,Tabular Puzzles,3,Tabular Puzzles - Moderate,11-01-2026
+Phase 1,Reasoning,Tabular Puzzles,3,Tabular Puzzles - With Variables,12-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Flat + Floor puzzles based,5,Flat + Floor puzzles - Basics,12-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Flat + Floor puzzles based,5,Flat + Floor puzzles - Easy,13-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Flat + Floor puzzles based,5,Flat + Floor puzzles - Moderate,13-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Flat + Floor puzzles based,5,Flat + Floor puzzles - Moderate,14-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Flat + Floor puzzles based,5,Flat + Floor puzzles - With Variables,14-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Uncertain Seating Arrangement based,4,Uncertain Seating Arrangement - Basics,15-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Uncertain Seating Arrangement based,4,Uncertain Seating Arrangement - Easy,15-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Uncertain Seating Arrangement based,4,Uncertain Seating Arrangement - Moderate,16-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Uncertain Seating Arrangement based,4,Uncertain Seating Arrangement - With Variables,16-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Designation Based,4,Designation Based Puzzles - Basics,17-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Designation Based,4,Designation Based Puzzles - Easy,17-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Designation Based,4,Designation Based Puzzles - Moderate,18-01-2026
+Phase 1,Reasoning,HOT Category Puzzles Designation Based,4,Designation Based Puzzles - With Variables,18-01-2026
+Phase 1,Reasoning,Triangular Arrangements,2,Introduction & Basics,19-01-2026
+Phase 1,Reasoning,Triangular Arrangements,2,Traingular arrangements - With Variables,19-01-2026
+Phase 1,Reasoning,Inequality,4,Introduction & Basics,20-01-2026
+Phase 1,Reasoning,Inequality,4,Double Statement,20-01-2026
+Phase 1,Reasoning,Inequality,4,Either or & Exceptional Cases,21-01-2026
+Phase 1,Reasoning,Inequality,4,Reverse & Missing Inqualitites,21-01-2026
+Phase 1,Reasoning,Syllogism,6,Introduction & Basics,22-01-2026
+Phase 1,Reasoning,Syllogism,6,Possibility Conclusion - Basics,22-01-2026
+Phase 1,Reasoning,Syllogism,6,Possibility Conclusion - Tricky,23-01-2026
+Phase 1,Reasoning,Syllogism,6,Definite Conclusions,23-01-2026
+Phase 1,Reasoning,Syllogism,6,Either or & Exceptional Cases,24-01-2026
+Phase 1,Reasoning,Syllogism,6,New Keywords,24-01-2026
+Phase 1,Reasoning,Direction & Distance,3,Introduction & Basics,25-01-2026
+Phase 1,Reasoning,Direction & Distance,3,Easy to Moderate Level Practice Session,25-01-2026
+Phase 1,Reasoning,Direction & Distance,3,Direction & Distance - Moderate level,26-01-2026
+Phase 1,Reasoning,Coding decoding,3,Introduction & Basics,26-01-2026
+Phase 1,Reasoning,Coding decoding,3,Chinese coding - Easy to moderate Level,27-01-2026
+Phase 1,Reasoning,Coding decoding,3,Letter to letter Coding,27-01-2026
+Phase 1,Reasoning,Order & Ranking,3,Introduction & Basics,28-01-2026
+Phase 1,Reasoning,Order & Ranking,3,Easy to Moderate Level Practice Session,28-01-2026
+Phase 1,Reasoning,Order & Ranking,3,Order & Ranking - Moderate Level Questions,29-01-2026
+Phase 1,Reasoning,Alphabets,5,Introduction & Basics,29-01-2026
+Phase 1,Reasoning,Alphabets,5,Alphanumeric symbol series,30-01-2026
+Phase 1,Reasoning,Alphabets,5,Word Series,30-01-2026
+Phase 1,Reasoning,Alphabets,5,Number Series,31-01-2026
+Phase 1,Reasoning,Alphabets,5,Pair counting & Conditional operations,31-01-2026
+Phase 1,Reasoning,Blood Relations,4,Introduction & Basics,01-02-2026
+Phase 1,Reasoning,Blood Relations,4,Easy to Moderate Level Practice Session,01-02-2026
+Phase 1,Reasoning,Blood Relations,4,Blood Relations - Moderate evel questions,02-02-2026
+Phase 1,Reasoning,Blood Relations,4,Blood Relations - Moderate evel questions,02-02-2026
+Phase 1,Reasoning,Input Output,3,Input Output - Introduction & Basics,03-02-2026
+Phase 1,Reasoning,Input Output,3,Input Output - Sinlge Arrangements,03-02-2026
+Phase 1,Reasoning,Input Output,3,Input Output - Double Arrangements - 1,04-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Introduction & Basics,04-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Same Direction - Easy,05-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Same Direction - Moderate,05-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Same  Direction - With Variables,06-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Opposite direction - Basics,06-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Opposite direction - Easy,07-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Opposite direction - Moderate,07-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Facing Opposite direction - With Variables,08-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Double row - Basics,08-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Double row - Easy,09-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Double row - Moderate,09-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Double row - Tricky,10-02-2026
+Phase 1,Reasoning,Linear Arrangements,13,Double row - With Variables,10-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Introduction & Basics,11-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Sinlge Arrangements,11-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Double Arrangements - 1,12-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Double Arrangements - 2,12-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Double Arrangements - 3,13-02-2026
+Phase 1,Reasoning,Inequality HL,4,Coded Inequalities for mains - Basic,13-02-2026
+Phase 1,Reasoning,Inequality HL,4,Coded Inequalities for mains - Practice session,14-02-2026
+Phase 1,Reasoning,Inequality HL,4,Reverse Coded Inequalitites,14-02-2026
+Phase 1,Reasoning,Inequality HL,4,Inequality - Definitely False,15-02-2026
+Phase 1,Reasoning,Syllogism HL,5,Reverse Syllogsim for mains,15-02-2026
+Phase 1,Reasoning,Syllogism HL,5,Coded Syllogism for mains,16-02-2026
+Phase 1,Reasoning,Syllogism HL,5,Syllogism - Sachin Sir Special,16-02-2026
+Phase 1,Reasoning,Syllogism HL,5,Sylogism - Definitely false,17-02-2026
+Phase 1,Reasoning,Syllogism HL,5,Syllogism - Conclusion with 3 Entities,17-02-2026
+Phase 1,Reasoning,Direction & Distance HL,2,Direction & Distance - Clerk mains Level,18-02-2026
+Phase 1,Reasoning,Direction & Distance HL,2,Direction & Distance - PO mains Level,18-02-2026
+Phase 1,Reasoning,Coding Decoding HL,5,Coding Decoding Mains Basics,19-02-2026
+Phase 1,Reasoning,Coding Decoding HL,5,Coding decoding for mains - LNS,19-02-2026
+Phase 1,Reasoning,Coding Decoding HL,5,Coding decoding for mains - Clock,20-02-2026
+Phase 1,Reasoning,Coding Decoding HL,5,Coding decoding for mains - Binary,20-02-2026
+Phase 1,Reasoning,Coding Decoding HL,5,Coding decoding for mains - Conditional coding,21-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Mains Level - 1,21-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Mains Level - 2,22-02-2026
+Phase 1,Reasoning,Input output HL,8,Input Output - Mains Level - 3,22-02-2026
+Phase 1,Reasoning,Order & Ranking HL,1,Order & Ranking - Mains Level,23-02-2026
+Phase 1,Reasoning,Alphabets HL,2,Alphabets - Mains Level - Conditional Operations,23-02-2026
+Phase 1,Reasoning,Alphabets HL,2,Alphabets - Mains Level - Matrix Based,24-02-2026
+Phase 1,Reasoning,Blood Relations HL,2,Blood relations - Mains level,24-02-2026
+Phase 1,Reasoning,Blood Relations HL,2,Blood relations - Mains level,25-02-2026
+Phase 1,Reasoning,Data sufficiency HL,3,Introduction & Basics,25-02-2026
+Phase 1,Reasoning,Data sufficiency HL,3,Clerk Mains level,26-02-2026
+Phase 1,Reasoning,Data sufficiency HL,3,PO mains level,26-02-2026
+Phase 1,Reasoning,Analytical Reasoning HL,4,Analytical reasoning - 1,27-02-2026
+Phase 1,Reasoning,Analytical Reasoning HL,4,Analytical reasoning - 2,27-02-2026
+Phase 1,Reasoning,Analytical Reasoning HL,4,Analytical reasoning - 3,28-02-2026
+Phase 1,Reasoning,Analytical Reasoning HL,4,Analytical reasoning - 4,28-02-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 1,01-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 2,01-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 3,02-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 4,02-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 5,03-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 6,03-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 7,04-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 8,04-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 9,05-03-2026
+Phase 1,Reasoning,Mains Level Puzzles HL,10,Mains Level Puzzles - 10,05-03-2026
