@@ -392,6 +392,146 @@ def phase1_subject(subject):
     )
 
 # ======================================================
+# GST INVOICE ENTRY
+# ======================================================
+
+INVOICES_CSV = "data/invoices.csv"
+
+GST_STATES = [
+    ("01", "Jammu & Kashmir"), ("02", "Himachal Pradesh"), ("03", "Assam"),
+    ("04", "Meghalaya"), ("05", "Sikkim"), ("06", "Arunachal Pradesh"),
+    ("07", "Nagaland"), ("08", "Manipur"), ("09", "Mizoram"), ("10", "Tripura"),
+    ("11", "Chandigarh"), ("12", "Rajasthan"), ("13", "Chhattisgarh"),
+    ("14", "Uttarakhand"), ("15", "Jharkhand"), ("16", "Odisha"),
+    ("17", "Madhya Pradesh"), ("18", "Gujarat"), ("19", "Goa"),
+    ("20", "Daman & Diu"), ("21", "Tamil Nadu"), ("22", "Maharashtra"),
+    ("23", "Karnataka"), ("24", "Kerala"), ("25", "Puducherry"),
+    ("26", "Dadra & Nagar Haveli and Daman & Diu"), ("27", "Maharashtra"),
+    ("28", "Andhra Pradesh"), ("29", "Telangana"), ("30", "Uttar Pradesh"),
+    ("31", "West Bengal"), ("32", "Sikkim"), ("33", "Odisha"),
+    ("34", "Bihar"), ("35", "Andaman & Nicobar Islands"),
+    ("36", "Ladakh"), ("37", "Haryana"), ("38", "Delhi"),
+]
+
+INVOICE_FIELDS = [
+    "invoice_no", "invoice_date", "supplier_name", "supplier_gstin",
+    "recipient_name", "recipient_gstin", "place_of_supply", "supply_type",
+    "reverse_charge", "item_desc", "hsn_sac", "gst_rate", "qty", "rate",
+    "taxable_value", "cgst", "sgst", "igst", "total", "remarks",
+]
+
+
+def load_invoices():
+    if not os.path.exists(INVOICES_CSV):
+        return []
+    with open(INVOICES_CSV, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def save_invoice(record):
+    new = not os.path.exists(INVOICES_CSV)
+    with open(INVOICES_CSV, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=INVOICE_FIELDS)
+        if new:
+            writer.writeheader()
+        writer.writerow(record)
+
+
+def validate_gstin(gstin):
+    """Basic GSTIN format check: 2 digits state + 15 char PAN-like body."""
+    import re
+    return bool(re.fullmatch(r"\d{2}[A-Z]{5}\d{4}[A-Z][A-Z\d]Z[A-Z\d]", gstin))
+
+
+@app.route("/invoice", methods=["GET", "POST"])
+def invoice():
+    error = None
+
+    if request.method == "POST":
+        supplier_gstin = request.form["supplier_gstin"].strip().upper()
+        recipient_gstin = request.form["recipient_gstin"].strip().upper()
+        pos = request.form["place_of_supply"]
+        supply_type = request.form["supply_type"]
+
+        if not validate_gstin(supplier_gstin):
+            error = "Invalid Supplier GSTIN format (expected e.g. 27AAEPS1234F1Z5)."
+        elif not validate_gstin(recipient_gstin):
+            error = "Invalid Recipient GSTIN format (expected e.g. 27AAEPS1234F1Z5)."
+        else:
+            try:
+                qty = float(request.form.getlist("qty")[0] or 0)
+                rate = float(request.form.getlist("rate")[0] or 0)
+                gst_rate = float(request.form["gst_rate"])
+            except ValueError:
+                error = "Quantity / Rate / GST rate must be numeric."
+
+        if error is None:
+            taxable = round(qty * rate, 2)
+
+            # Intra-state (supplier state code == place of supply) -> CGST+SGST,
+            # otherwise IGST. Exports are zero-rated.
+            supplier_state = supplier_gstin[:2]
+            intra_state = (supplier_state == pos)
+            half = round(taxable * gst_rate / 2 / 100, 2)
+
+            if supply_type == "EXPT" or gst_rate == 0:
+                cgst = sgst = igst = 0.0
+            elif intra_state:
+                cgst = sgst = half
+                igst = 0.0
+            else:
+                cgst = sgst = 0.0
+                igst = round(taxable * gst_rate / 100, 2)
+
+            total = round(taxable + cgst + sgst + igst, 2)
+
+            descs = request.form.getlist("item_desc")
+            hsns = request.form.getlist("hsn_sac")
+
+            record = {
+                "invoice_no": request.form["invoice_no"].strip(),
+                "invoice_date": request.form["invoice_date"],
+                "supplier_name": request.form["supplier_name"].strip(),
+                "supplier_gstin": supplier_gstin,
+                "recipient_name": request.form["recipient_name"].strip(),
+                "recipient_gstin": recipient_gstin,
+                "place_of_supply": pos,
+                "supply_type": supply_type,
+                "reverse_charge": request.form.get("reverse_charge", "No"),
+                "item_desc": "; ".join(d for d in descs if d.strip()),
+                "hsn_sac": "; ".join(h for h in hsns if h.strip()),
+                "gst_rate": gst_rate,
+                "qty": qty,
+                "rate": rate,
+                "taxable_value": taxable,
+                "cgst": cgst,
+                "sgst": sgst,
+                "igst": igst,
+                "total": total,
+                "remarks": request.form.get("remarks", "").strip(),
+            }
+            save_invoice(record)
+            return redirect("/invoice")
+
+    invoices = load_invoices()
+    # Cast numeric fields for display formatting
+    for inv in invoices:
+        for k in ("taxable_value", "cgst", "sgst", "igst", "total"):
+            try:
+                inv[k] = float(inv.get(k, 0) or 0)
+            except ValueError:
+                inv[k] = 0.0
+
+    return render_template(
+        "invoice.html",
+        states=GST_STATES,
+        invoices=invoices,
+        today=date.today().isoformat(),
+        error=error,
+    )
+
+
+# ======================================================
 # CONTEXT
 # ======================================================
 
